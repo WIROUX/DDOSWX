@@ -22,8 +22,8 @@ print "macker   : WX"
 print "telegram : https://t.me/Sad_Wx_virus"
 print "github   : https://github.com/WIROUX"
 print
-ip = raw_input("IP Target : ")
-port = input("Port        : ")
+ip = raw_input("IP Target -==>> ")
+port = input("Port        -==>> ")
 
 os.system("clear")
 os.system("figlet DDos WX")
@@ -38,7 +38,7 @@ print "[>>>>>>>>>>>>>>>-----] 75%"
 time.sleep(4)
 print "[>>>>>>>>>>>>>>>>>>>>] 100%"
 print "GO GO GO"
-espeak "berim sickesh konim"
+     os.system(espeak "berim sickesh konim")
 time.sleep(3)
 sent = 0
 while True:
