@@ -38,7 +38,7 @@ print "[>>>>>>>>>>>>>>>-----] 75%"
 time.sleep(4)
 print "[>>>>>>>>>>>>>>>>>>>>] 100%"
 print "GO GO GO"
-os.system(espeak "berim sickesh konim")
+espeak "berim sickesh konim"
 time.sleep(3)
 sent = 0
 while True:
