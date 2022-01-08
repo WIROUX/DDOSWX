@@ -3,6 +3,7 @@ import os
 import time
 import socket
 import random
+import espeak
 #Code Time
 from datetime import datetime
 now = datetime.now()
