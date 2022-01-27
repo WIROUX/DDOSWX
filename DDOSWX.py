@@ -6,6 +6,7 @@ import time
 import sys
 import _thread
 from colorama import Fore, Back, Style
+system(' cls or clear')
 cyan = Fore.CYAN
 red = Fore.RED
 magenta = Fore.MAGENTA
