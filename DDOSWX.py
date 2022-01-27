@@ -1,12 +1,13 @@
 #!/usr/bin/python
 #DOS TOOL
-#created by
+#created by SaDWX
 import socket
 import time
 import sys
+import os
 import _thread
 from colorama import Fore, Back, Style
-system(' cls or clear')
+os.system ('clear')
 cyan = Fore.CYAN
 red = Fore.RED
 magenta = Fore.MAGENTA
