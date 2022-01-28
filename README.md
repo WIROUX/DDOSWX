@@ -1,3 +1,1 @@
-# DDOSWX
-go attack ddos with this tool
-pls use vpn 
+# DDOSWX v.02
